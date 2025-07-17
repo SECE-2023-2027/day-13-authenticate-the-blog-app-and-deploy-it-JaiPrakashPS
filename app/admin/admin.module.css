@@ -1,0 +1,89 @@
+.container {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f7fafc;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: #2b6cb0;
+}
+
+.btn {
+  margin-right: 12px;
+  padding: 10px 16px;
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #2c5282;
+  transform: scale(1.05);
+}
+
+.blogList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.blogItem {
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogItem span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 1px solid #2b6cb0;
+  outline: none;
+}
+
+.form textarea {
+  min-height: 130px;
+  resize: vertical;
+}

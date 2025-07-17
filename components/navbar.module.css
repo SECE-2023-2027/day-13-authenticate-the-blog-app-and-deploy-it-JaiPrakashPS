@@ -1,0 +1,43 @@
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  .nav a {
+    margin-right: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav a:hover {
+    color: #0070f3; /* Next.js blue on hover */
+  }
+
+  .nav button {
+    background: #0070f3;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .nav button:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+  }
+
+  .nav button:active {
+    transform: scale(0.98);
+  }

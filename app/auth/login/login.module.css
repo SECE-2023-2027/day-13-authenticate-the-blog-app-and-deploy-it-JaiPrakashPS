@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 94vh;
+  background: linear-gradient(135deg, #f0f4f8, #e2e8f0);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.title {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b6cb0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  gap: 15px;
+}
+
+.form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #2b6cb0;
+  outline: none;
+  box-shadow: 0 0 6px rgba(43, 108, 176, 0.3);
+}
+
+.form button {
+  padding: 12px;
+  background: #2b6cb0;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+  background: #2c5282;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
