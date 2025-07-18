@@ -9,10 +9,9 @@ export default function EditBlog() {
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
   const router = useRouter();
-  const params = useParams(); // Get dynamic id
+  const params = useParams(); 
   const id = params.id;
 
-  // Fetch blog data by ID
   useEffect(() => {
     async function fetchBlog() {
       const res = await fetch(`/api/blogs/${id}`);
@@ -26,7 +25,6 @@ export default function EditBlog() {
     fetchBlog();
   }, [id]);
 
-  // Update blog
   const handleUpdate = async (e) => {
     e.preventDefault();
     const res = await fetch(`/api/blogs/${id}`, {

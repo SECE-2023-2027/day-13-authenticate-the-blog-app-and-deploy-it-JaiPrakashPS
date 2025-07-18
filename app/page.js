@@ -9,7 +9,6 @@ export default async function HomePage() {
   const session = await getServerSession(authOptions);
 
   if (!session) {
-    // If user is NOT logged in
     return (
       <div className={styles.container}>
         <h1 className={styles.title}>Welcome to Our Blog Platform</h1>
@@ -37,13 +36,11 @@ export default async function HomePage() {
     );
   }
 
-  // If user IS logged in
   await connectDB();
   const blogs = await Blog.find().lean();
 
   return (
     <div className={styles.container}>
-      {/* ✅ Welcome Section After Login */}
       <div className={styles.welcomeBox}>
         <h1>Welcome to Our Blog App, {session.user.name || "User"}!</h1>
         <p>
@@ -51,7 +48,6 @@ export default async function HomePage() {
         </p>
       </div>
 
-      {/* ✅ Terms and Conditions (Still Visible After Login) */}
       <div className={styles.section}>
         <h2>Terms & Conditions</h2>
         <p>
@@ -59,8 +55,6 @@ export default async function HomePage() {
           property. Any violation may result in account suspension.
         </p>
       </div>
-
-      {/* ✅ Blogs Section */}
       <h1 className={styles.title}>All Blogs</h1>
       {blogs.length > 0 ? (
         blogs.map((blog) => (

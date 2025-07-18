@@ -1,6 +1,4 @@
-/* Define variables within the component's main class for local scope.
-  This is the correct pattern for CSS Modules.
-*/
+
 .nav {
   --nav-background: #1a1d21;
   --text-primary: #f0f2f5;
@@ -12,7 +10,6 @@
   --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
 
-  /* Main navigation container styles */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,15 +21,13 @@
   color: var(--text-primary);
 }
 
-/* Grouping for links and auth controls */
 .navLinks,
 .navAuth {
   display: flex;
   align-items: center;
-  gap: 1.25rem; /* ✨ Modern spacing with gap */
+  gap: 1.25rem; 
 }
 
-/* Style for all links */
 .nav a {
   color: var(--text-secondary);
   text-decoration: none;
@@ -43,7 +38,6 @@
   transition: color 0.2s ease-in-out;
 }
 
-/* Underline effect on hover */
 .nav a::after {
   content: "";
   position: absolute;
@@ -79,7 +73,6 @@
   transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-/* Distinguish secondary links/buttons */
 .navAuth a {
   font-size: 0.95rem;
   color: var(--text-secondary);
@@ -87,7 +80,7 @@
 
 .nav button:hover {
   background-color: var(--accent-hover);
-  transform: translateY(-2px); /* Subtle lift effect */
+  transform: translateY(-2px); 
   box-shadow: 0 4px 12px rgba(0, 112, 243, 0.2);
 }
 

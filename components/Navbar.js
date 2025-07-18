@@ -8,7 +8,6 @@ export default function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      {/* Group for primary navigation links */}
       <div className={styles.navLinks}>
         <Link href="/">Home</Link>
         {session && (
@@ -19,7 +18,6 @@ export default function Navbar() {
         )}
       </div>
 
-      {/* Group for authentication controls */}
       <div className={styles.navAuth}>
         {session ? (
           <button onClick={() => signOut()}>Logout</button>

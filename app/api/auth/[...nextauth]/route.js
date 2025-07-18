@@ -11,7 +11,7 @@ const handler = NextAuth({
       clientSecret: process.env.GITHUB_SECRET,
       authorization: {
     params: {
-      prompt: "login" // Forces re-authentication
+      prompt: "login" 
     }
   }
     }),
@@ -43,7 +43,7 @@ const handler = NextAuth({
       return session;
     },
      async redirect({ url, baseUrl }) {
-      return baseUrl + '/'; // Always redirect to home after login
+      return baseUrl + '/'; 
     }
   },
   secret: process.env.NEXTAUTH_SECRET
